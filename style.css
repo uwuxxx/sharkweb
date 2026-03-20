@@ -22,7 +22,7 @@ body::before{
 content:"";
 position:fixed;
 inset:0;
-background:url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;
+background:url('https://cdn2.unrealengine.com/Fortnite%2Fpatch-notes%2Fv9-00%2Fbr-header-v9-00%2F09BR_POIs_Social_2-1920x1080-1c92ff98089a114d73211663dcb64c5bf9c352f2.jpg') center/cover no-repeat;
 filter: blur(18px) brightness(0.35);
 transform: scale(1.1);
 z-index:-2;
