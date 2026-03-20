@@ -5,9 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>mirex</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
 
+<link rel="stylesheet" href="style.css">
+
+</head>
 <body>
 
 <img src="https://www.pngall.com/wp-content/uploads/14/Crosshair-PNG-Image.png" class="crosshair" id="crosshair">
@@ -37,8 +38,8 @@
   <div class="price">$19.99</div>
   <div class="stock">122 in stock</div>
   <div class="overlay">
-    <a href="paypal.me/cookiegtvr" class="paypal">PayPal</a>
-    <a href="cash.app/$larpallday" class="cashapp">CashApp</a>
+    <a href="https://www.paypal.me/cookiegtvr" target="_blank" class="paypal">PayPal</a>
+    <a href="https://cash.app/$larpallday" target="_blank" class="cashapp">CashApp</a>
   </div>
 </div>
 
@@ -48,8 +49,8 @@
   <div class="price">$4.99</div>
   <div class="stock">122 in stock</div>
   <div class="overlay">
-    <a href="paypal.me/cookiegtvr" class="paypal">PayPal</a>
-    <a href="cash.app/$larpallday" class="cashapp">CashApp</a>
+    <a href="https://www.paypal.me/cookiegtvr" target="_blank" class="paypal">PayPal</a>
+    <a href="https://cash.app/$larpallday" target="_blank" class="cashapp">CashApp</a>
   </div>
 </div>
 
@@ -59,8 +60,8 @@
   <div class="price">$2.99</div>
   <div class="stock">122 in stock</div>
   <div class="overlay">
-    <a href="paypal.me/cookiegtvr" class="paypal">PayPal</a>
-    <a href="cash.app/larpallday" class="cashapp">CashApp</a>
+    <a href="https://www.paypal.me/cookiegtvr" target="_blank" class="paypal">PayPal</a>
+    <a href="https://cash.app/$larpallday" target="_blank" class="cashapp">CashApp</a>
   </div>
 </div>
 
@@ -73,6 +74,18 @@ const crosshair = document.getElementById('crosshair');
 document.addEventListener('mousemove', e => {
   crosshair.style.left = e.clientX + 'px';
   crosshair.style.top = e.clientY + 'px';
+});
+
+const hoverTargets = document.querySelectorAll('a, .product');
+
+hoverTargets.forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    crosshair.style.transform = 'translate(-50%, -50%) scale(1.4)';
+  });
+
+  el.addEventListener('mouseleave', () => {
+    crosshair.style.transform = 'translate(-50%, -50%) scale(0.8)';
+  });
 });
 </script>
 
